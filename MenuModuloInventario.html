@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cor Processu Mobile</title>
+<link href="ccs/jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css">
+<script src="ccs/jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="ccs/jquery-mobile/interpretadorAjax.js" type="text/javascript"></script>
+<script src="ccs/jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+<script src="lib/funciones.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- Menu Principal -->
+<div data-role="page" id="menu_principal">
+	<div data-role="header" align="center" data-theme="b">
+		<img src="images/SID_logo_Mobile.png" width="410" height="100">
+        <div data-role="navbar" data-iconpos="top">
+        	<ul>
+				<li><a onClick="redireccionar('index.html\#menu_principal')">Regresar</a></li>
+            	<li><a onClick="sid()">SID, C.A.</a></li>
+            	<li><a onClick="salir()">Salir</a></li>
+         	</ul>
+      	</div>
+	</div>
+	<div data-role="content">
+    	<ul data-role="listview" data-split-icon="delete">
+    	  <li data-role="list-divider" role="heading"><h3>Módulo de Inventario</h3></li>
+    	</ul>	
+		<ul data-role="listview" id="opcionesMenu">
+			<li><a onClick="redireccionar('Consultas.html')">Consultas</a></li>
+			<li><a onClick="redireccionar('PreCod.html')">Codificacion</a></li>
+			<li><a onClick="ConsultaD('','NewDespacho.html')">Despacho</a></li>
+            <li data-role="list-divider" role="heading"></li>
+		</ul>		
+	</div>
+</div>
+<!------- Menu Principal -->
+</body>
+</html>
