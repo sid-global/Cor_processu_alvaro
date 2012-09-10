@@ -10,7 +10,7 @@
 <script src="lib/funciones.js" type="text/javascript"></script>
 </head>
 
-<body onload="CDespacho()">
+<body onload="CMovimiento('Despacho')">
 
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
@@ -55,9 +55,10 @@
 	    <input type="text" name="FF" id="FF" placeholder="yyyy-mm-dd" />
       </div>
 	  <div  align="center" data-inline="true">
-	    <button data-inline="true" onClick="GuardarFecha('CDespacho.html')">Filtrar Por Fecha</button>
-	    <button data-inline="true" onClick="PreConsultaRecepcion('CDespacho.html')">Limpiar Filtro</button>
+	    <button data-inline="true" data-theme="b" onClick="GuardarFecha('CDespacho.html')">Filtrar Por Fecha</button>
+	    <button data-inline="true" data-theme="b" onClick="PreConsultaRecepcion('CDespacho.html')">Limpiar Filtro</button>
       </div>
+	  <br/>
       <div id="Despacho"></div>
 	       
 	</div>

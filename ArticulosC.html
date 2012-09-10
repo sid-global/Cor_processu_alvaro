@@ -14,7 +14,7 @@
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
 	<div data-role="header" data-theme="b">
-		<h1>Artículos</h1>
+		<h1>Consulta de Artículos</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -44,13 +44,11 @@
       </div>
 	</div>
 	<div data-role="content" id="articulo" aling="center">
-	  <div id="dmatcat_n1"></div>
-	  <div id="dmatcat_n2"></div>
-	  <div id="dmatcat_n3"></div>
+
 	  <div id="dmatcat"></div>
 	  <center><div data-inline="true">
-	    <button data-inline="true" onClick="TipoBusqueda('ArticulosC.html','a','t')">Todos</button>
-	    <button data-inline="true" onClick="TipoBusqueda('ArticulosC.html','a','a')">Por Almacén</button>
+	    <button data-inline="true" data-theme="b" onClick="TipoBusqueda('ArticulosC.html','a','t')">Todos</button>
+	    <button data-inline="true" data-theme="b" onClick="TipoBusqueda('ArticulosC.html','a','a')">Por Almacén</button>
       </div></center>
 		<div id="ArtA"> 
         </div>

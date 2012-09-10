@@ -29,12 +29,17 @@
 		<ul data-role="listview" id="opcionesMenuConsulta">
         	<li data-role="list-divider" role="heading"><h3>Menú De Consultas</h3></li>
 			<li><a onClick="PreConsultarComposicion()">Composiciones</a></li>
-            <li><a onClick="PreConsultaArticulo();">Artículos</a></li>
+            <li><a onClick="PreConsultaArticulo();">Artículos por Almacen</a></li>
+			<li><a onClick="PreConsultaArt();">Artículos</a></li>
             <li><a onClick="PreConsultaRecepcion('CRecepcion.html')">Recepciones</a></li>
             <li><a onClick="PreConsultaRecepcion('CFacTrans.html')">Facturas En Transito</a></li>
-            <li><a onClick="PreConsultaLxC()">Lotes Sin Codificar</a></li>
+            <li><a onClick="PreConsultaLxC()">Lotes por Codificar</a></li>
 			<li><a onClick="PreConsultaRecepcion('CCodificacion.html')">Codificaciones</a></li>
 			<li><a onClick="PreConsultaRecepcion('CDespacho.html')">Despacho</a></li>
+			<li><a onClick="PreConsultaRecepcion('CInventario.html')">Inventario</a></li>
+			<li><a onClick="PreConsultaRecepcion('CTraslado.html')">Traslado</a></li>
+			<li><a onClick="redireccionar('CAlmacen.html')">Almacen</a></li>
+			<li><a onClick="redireccionar('CResponsable.html')">Responsable</a></li>
             <li data-role="list-divider" role="heading"></li>
 		</ul>
 	</div>

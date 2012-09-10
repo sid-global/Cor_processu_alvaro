@@ -10,11 +10,12 @@
 <script src="lib/funciones.js" type="text/javascript"></script>
 </head>
 
-<body onload="PreConsultaArticulo();">
+<body onload="CResponsable()">
+
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
 	<div data-role="header" data-theme="b">
-		<h1>Artículos</h1>
+		<h1>Consulta Responsable</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -31,10 +32,11 @@
     </div>
 </div>
 <!------- Carga de datos -->
-<!-- Articulo -->
-<div data-role="page" id="Articulo">
+
+<!-- CCodificacion -->
+<div data-role="page" id="CResponsable">
 	<div data-role="header" data-theme="b">
-		<h1>Consulta de Artículos</h1>
+		<h1>Consulta Responsable</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -43,23 +45,14 @@
          </ul>
       </div>
 	</div>
-	<div data-role="content" id="art" aling="center">
-	  <div id="dmatcat_n1"></div>
-	  <div id="dmatcat_n2"></div>
-	  <div id="dmatcat_n3"></div>
-	  <div id="dmatcat"></div>
-	  <center><div data-inline="true">
-	  
-	    <button data-inline="true" onClick="ver(4,'matcat');localT()">Todos</button>
-	    <button data-inline="true" onClick="ver();localA()">Por Almacén</button>
-      </div></center>
-
-
-		
+	<div data-role="content" id="CRecep" aling="center">
+	
+      <div id="Resp"></div>
 	       
 	</div>
 </div>
-<!------- Articulo -->
+<!------- CRecepcion -->
 
 </body>
 </html>
+

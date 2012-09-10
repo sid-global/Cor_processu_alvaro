@@ -15,7 +15,7 @@
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
 	<div data-role="header" data-theme="b">
-		<h1>Articulos</h1>
+		<h1>Consulta Facturas en Transito</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -36,7 +36,7 @@
 <!-- CFacTran -->
 <div data-role="page" id="CFacTrans">
 	<div data-role="header" data-theme="b">
-		<h1>Consulta Factura Transito</h1>
+		<h1>Consulta Facturas en Transito</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -55,9 +55,10 @@
 	    <input type="text" name="FF" id="FF" placeholder="yyyy-mm-dd"/>
       </div>
 	  <div  align="center" data-inline="true">
-	    <button data-inline="true" onClick="GuardarFecha('CFacTrans.html')">Filtrar Por Fecha</button>
-	    <button data-inline="true" onClick="PreConsultaRecepcion('CFacTrans.html')">Limpiar Filtro</button>
+	    <button data-inline="true" data-theme="b" onClick="GuardarFecha('CFacTrans.html')">Filtrar Por Fecha</button>
+	    <button data-inline="true" data-theme="b" onClick="PreConsultaRecepcion('CFacTrans.html')">Limpiar Filtro</button>
       </div>
+	  <br/>
       <div id="FacT"></div>
       	  
 	</div>

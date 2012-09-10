@@ -15,10 +15,10 @@
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
 	<div data-role="header" data-theme="b">
-		<h1>Articulos</h1>
+		<h1>Consulta Recepción</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
-           	<li><a onClick="history.go(-2)">Regresar</a></li>
+           	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
             <li><a onClick="sid()">SID, C.A.</a></li>
             <li><a onClick="salir()">Salir</a></li>
          </ul>
@@ -36,10 +36,10 @@
 <!-- CRecepcion -->
 <div data-role="page" id="CRecepcion">
 	<div data-role="header" data-theme="b">
-		<h1>Consulta Recepcion</h1>
+		<h1>Consulta Recepción</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
-           	<li><a onClick="history.go(-1)">Regresar</a></li>
+           	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
             <li><a onClick="sid()">SID, C.A.</a></li>
             <li><a onClick="salir()">Salir</a></li>
          </ul>
@@ -55,8 +55,8 @@
 	    <input type="text" name="FF" id="FF" placeholder="yyyy-mm-dd"/>
       </div>
 	  <div  align="center" data-inline="true">
-	    <button data-inline="true" onClick="GuardarFecha('CRecepcion.html')">Filtrar Por Fecha</button>
-	    <button data-inline="true" onClick="PreConsultaRecepcion('CRecepcion.html')">Limpiar Filtro</button>
+	    <button data-inline="true" data-theme="b" onClick="GuardarFecha('CRecepcion.html')">Filtrar Por Fecha</button>
+	    <button data-inline="true" data-theme="b" onClick="PreConsultaRecepcion('CRecepcion.html')">Limpiar Filtro</button>
       </div>
       <div id="Recep"></div>
 	       

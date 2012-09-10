@@ -10,15 +10,14 @@
 <script src="lib/funciones.js" type="text/javascript"></script>
 </head>
 
-<body onload="CRecepByFac()">
-
-<!-- Carga de datos -->
+<body onLoad="Inventario();" >
 <div data-role="page" id="carga">
+<!-- Carga de datos -->
 	<div data-role="header" data-theme="b">
-		<h1>Consulta Recepción</h1>
+		<h1>Inventario</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
-           	<li><a onClick="redireccionar('FacTrans.html')">Regresar</a></li>
+           	<li><a onClick="redireccionar(localStorage.ref)">Regresar</a></li>
             <li><a onClick="sid()">SID, C.A.</a></li>
             <li><a onClick="salir()">Salir</a></li>
          </ul>
@@ -33,37 +32,27 @@
 </div>
 <!------- Carga de datos -->
 
-<!-- CRecepcion -->
-<div data-role="page" id="CRecepByFac">
+<!-- Despacho -->
+<div data-role="page" id="Inventario">
 	<div data-role="header" data-theme="b">
-		<h1>Consulta Recepción</h1>
+		<h1>Inventario</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
-           	<li><a onClick="redireccionar('FacTrans.html')">Regresar</a></li>
+           	<li><a onClick="redireccionar(localStorage.ref)">Regresar</a></li>
             <li><a onClick="sid()">SID, C.A.</a></li>
             <li><a onClick="salir()">Salir</a></li>
          </ul>
       </div>
 	</div>
 	<div data-role="content" id="CRecep" aling="center">
-	  <div data-role="fieldcontain">
-        <label for="FI">Fecha Inicio:</label>
-        <input type="text" name="FI" id="FI" placeholder="yyyy-mm-dd"/>
-	  </div>
-	  <div data-role="fieldcontain">
-	    <label for="FF">Fecha Fin:</label>
-	    <input type="text" name="FF" id="FF" placeholder="yyyy-mm-dd"/>
-      </div>
-	  <div  align="center" data-inline="true">
-	    <button data-inline="true" data-theme="b" onClick="GuardarFecha('CRecepByFac.html')">Filtrar Por Fecha</button>
-	    <button data-inline="true" data-theme="b" onClick="PreConsultaRecepcion('CRecepByFac.html')">Limpiar Filtro</button>
-      </div>
-      <div id="Recep"></div>
+
+      	<div id="Inv"></div>
 	       
 	</div>
 </div>
-<!------- CRecepcion -->
+<!-------Despacho -->
 
 </body>
 </html>
+
 

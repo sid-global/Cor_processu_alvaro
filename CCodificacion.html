@@ -15,7 +15,7 @@
 <!-- Carga de datos -->
 <div data-role="page" id="carga">
 	<div data-role="header" data-theme="b">
-		<h1>Articulos</h1>
+		<h1>Consulta Codificación</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -36,7 +36,7 @@
 <!-- CCodificacion -->
 <div data-role="page" id="CCodificacion">
 	<div data-role="header" data-theme="b">
-		<h1>Consulta Codificacion</h1>
+		<h1>Consulta Codificación</h1>
         <div data-role="navbar" data-iconpos="top">
          <ul>
            	<li><a onClick="redireccionar('Consultas.html')">Regresar</a></li>
@@ -54,9 +54,10 @@
 	    <label for="FF">Fecha Fin:</label>
 	    <input type="text" name="FF" id="FF" placeholder="yyyy-mm-dd"/>
       </div>
+	  <br/>
 	  <div  align="center" data-inline="true">
-	    <button data-inline="true" onClick="GuardarFecha('CCodificacion.html')">Filtrar Por Fecha</button>
-	    <button data-inline="true" onClick="PreConsultaRecepcion('CCodificacion.html')">Limpiar Filtro</button>
+	    <button data-inline="true" data-theme="b" onClick="GuardarFecha('CCodificacion.html')">Filtrar Por Fecha</button>
+	    <button data-inline="true" data-theme="b" onClick="PreConsultaRecepcion('CCodificacion.html')">Limpiar Filtro</button>
       </div>
       <div id="Codif"></div>
 	       
